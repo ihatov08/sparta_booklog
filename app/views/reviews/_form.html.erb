@@ -1,0 +1,9 @@
+<%= form_for [@book, @review] do |f| %>
+<div class="form-group">
+<%= f.label :body, "レビュー" %>
+<%= f.text_area :body, class: "form-controll" %>
+</div>
+<!-- <%= f.hidden_field :user_id, value: current_user.id %> -->
+<!-- <%= f.hidden_field :book_id, value: @book.id %> -->
+<%= f.submit %>
+<% end %>
